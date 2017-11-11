@@ -11,16 +11,20 @@ html {
     padding-bottom: 20px;
 }
 
-#mainHeader li a:after {
-    margin: 0 30px;
-    content: '/';
-    color: #eee;
-    display: inline-block;
+@media (min-width: 992px) {
+    #mainHeader li a:after {
+        margin: 0 30px;
+        content: '/';
+        color: #eee;
+        display: inline-block;
+    }
+    
+    #mainHeader li:last-child a:after {
+        content: '';
+    }
 }
 
-#mainHeader li:last-child a:after {
-    content: '';
-}
+
 
 .profile-info {
     margin-bottom: 30px;
@@ -44,7 +48,7 @@ html {
     margin-right: auto;
     padding-left: 2em;
     padding-right: 2em; 
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 p {
