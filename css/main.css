@@ -1,0 +1,54 @@
+
+html { 
+    font-size: 62.5%;
+    color: #494C4E;
+}
+
+#mainHeader {
+    font-size: 2.2em;
+    background-color: #fff!important;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#mainHeader li a:after {
+    margin: 0 30px;
+    content: '/';
+    color: #eee;
+    display: inline-block;
+}
+
+#mainHeader li:last-child a:after {
+    content: '';
+}
+
+.profile-info {
+    margin-bottom: 30px;
+}
+
+.profile-details {
+    display: inline-block;
+    margin-left: 3em;
+}
+
+.profile-image {
+    display: inline-block;
+    width: 12rem;
+    /*height: 12rem;*/
+    border-radius: 50%;
+}
+
+#wrapper {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em; 
+    font-size: 1em;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-bottom: 0.5em;
+}
