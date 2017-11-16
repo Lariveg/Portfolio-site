@@ -5,3 +5,9 @@ $("#main-nav").children().click(function() {
     $(this).addClass("active");
 });
 
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $("#mainHeader");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
