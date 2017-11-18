@@ -3,13 +3,17 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    position: relative;
+  }
+
 #wrapper {
     width: 90%;
     max-width: 1000px;
     margin: 50px auto 0;
     color: #494C4E;
     text-align: center;
-    padding-top: 130px;
+    padding-top: 60px;
 }
 
 #mainHeader {
@@ -37,7 +41,7 @@ html {
     border-width: 2px;
 }
 
-.scrolled .navbar-toggler {
+/* .scrolled .navbar-toggler {
     border-color: #eee !important;
     transition: border-color 200ms linear;
 }
@@ -46,11 +50,12 @@ html {
     color: #eee !important;
     transition: color 200ms linear;
 }
+*/
 
 #mainHeader.scrolled {
-    background-color: #1565C0 !important;
+    background-color: #CFD8DC !important;
     transition: background-color 200ms linear;
-  }
+  } 
 
 .profile-image {
     max-width: 330px;
@@ -99,6 +104,17 @@ html {
     font-size: 1.8em;
     line-height: 1.6em;
     margin-bottom: 0.5em;
+}
+
+#skills ul {
+    list-style: none;
+    font-size: 2.2em;
+    line-height: 1.6em;
+}
+
+#skills span {
+    font-size: 0.9em;
+    margin-right: 4px;
 }
 
 .projects-details h1{

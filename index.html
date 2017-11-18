@@ -7,10 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
   </head>
-  <body>
+  <body id="top" data-spy="scroll" data-target="#mainHeader">
 
       <nav id="mainHeader" class="navbar navbar-expand-lg navbar-light bg-light mb-5 fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseHeader" aria-controls="mainHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,9 +19,9 @@
         </button>
       
         <div id="collapseHeader" class="collapse navbar-collapse">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto" id="main-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0 mx-auto" id="main-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -64,8 +65,11 @@
         <h1 class="title-font">Projects</h1>
         <p>I've done all my projects within the Android Nanodegree Basics at Udacity. If you want to see the source code, you can check out my <a href="https://github.com/Lariveg?tab=repositories" target='blank'>github</a> profile.</p>
         <div class="projects-details">
-          <h1>LoL Score Tracker</h1>
-          <p>The project is about creating a Score Keeper App. My LoL Score Tracker is inspired from the League of Legends game. In the app, you have different kind of scores you keep track of, and when the nexus button is pressed, that team wins. When one of the team wins, then the main layout disappears and a victory message appears on the screen. If you press reset, the app resets from the initial state.</p>
+
+          <div class="projects-description">
+            <h1>LoL Score Tracker</h1>
+            <p>The project is about creating a Score Keeper App. My LoL Score Tracker is inspired from the League of Legends game. In the app, you have different kind of scores you keep track of, and when the nexus button is pressed, that team wins. When one of the team wins, then the main layout disappears and a victory message appears on the screen. If you press reset, the app resets from the initial state.</p>
+          </div>
 
           <div class='carouselWrapper'>
             <div id="carouselControls1" class="carousel slide" data-ride="carousel">
@@ -90,12 +94,16 @@
                 </a>
             </div>
           </div> <!--.carouselWrapper-->
+          <span class="clearfix"></span>
 
         </div> <!--.projects-details-->
 
         <div class="projects-details">
-          <h1>Quiz App</h1>
-          <p>The project is about creating a Quiz App. The questions are in a variety of formats such as free text response, checkboxes, and radio buttons. I made the quiz using CardView. When you finish the quiz there is a try again button, which resets the app in the initial state.</p>
+
+          <div class="projects-description">
+            <h1>Quiz App</h1>
+            <p>The project is about creating a Quiz App. The questions are in a variety of formats such as free text response, checkboxes, and radio buttons. I made the quiz using CardView. When you finish the quiz there is a try again button, which resets the app in the initial state.</p>
+          </div>
 
           <div class='carouselWrapper'>
             <div id="carouselControls2" class="carousel slide" data-ride="carousel">
@@ -123,12 +131,16 @@
                 </a>
             </div>
           </div> <!--.carouselWrapper-->
+          <span class="clearfix"></span>
 
         </div> <!--.projects-details-->
 
         <div class="projects-details">
-          <h1>Bucharest Tour Guide</h1>
-          <p>The project is about making a Tour Guide app. This is an app with multiple screens, each of which lists a kind of attraction for a given city, national park, or historical monument.</p>
+
+          <div class="projects-description">
+            <h1>Bucharest Tour Guide</h1>
+            <p>The project is about making a Tour Guide app. This is an app with multiple screens, each of which lists a kind of attraction for a given city, national park, or historical monument.</p>
+          </div>
 
           <div class='carouselWrapper'>
             <div id="carouselControls3" class="carousel slide" data-ride="carousel">
@@ -156,12 +168,15 @@
                 </a>
             </div>
           </div> <!--.carouselWrapper-->
+          <span class="clearfix"></span>
 
         </div> <!--.projects-details-->
 
         <div class="projects-details">
-          <h1>Inventory app</h1>
-          <p>The goal is to design and create the structure of an Inventory App which would allow a store to keep track of its inventory of products. The app will need to store information about price, quantity available, supplier, and a picture of the product. It will also need to allow the user to track sales and shipments and make it easy for the user to order more from the listed supplier.</p>
+          <div class="projects-description">
+            <h1>Inventory app</h1>
+            <p>The goal is to design and create the structure of an Inventory App which would allow a store to keep track of its inventory of products. The app will need to store information about price, quantity available, supplier, and a picture of the product. It will also need to allow the user to track sales and shipments and make it easy for the user to order more from the listed supplier.</p>
+          </div>
 
           <div class='carouselWrapper'>
             <div id="carouselControls4" class="carousel slide" data-ride="carousel">
@@ -189,16 +204,20 @@
                 </a>
             </div>
           </div> <!--.carouselWrapper-->
+          <span class="clearfix"></span>
 
         </div> <!--.projects-details-->
 
         <div class="projects-details">
-          <h1>News app</h1>
-          <p>The goal is to create a News feed app which gives a user regularly-updated news from the internet related to a particular topic, person, or location.</p>
+          <div class="projects-description">
+              <h1>News app</h1>
+              <p>The goal is to create a News feed app which gives a user regularly-updated news from the internet related to a particular topic, person, or location.</p>
+          </div>
 
           <div class='carouselWrapper'>
             <img class="d-block w-100" src='assets/img/news-app.png'>
           </div>
+          <span class="clearfix"></span>
 
         </div> <!--.projects-details-->
 
@@ -206,6 +225,21 @@
 
       <div id="skills">
         <h1>Skills</h1>
+
+        <ul>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>HTML 5</li>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>CSS</li>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>JavaScript</li>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>Git</li>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>Node JS</li>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>Gulp</li>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>npm</li>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>Bootstrap 4</li>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>Express</li>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>Sass</li>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>Java</li>
+          <li><span class="oi oi-caret-right" title="caret right" aria-hidden="true"></span>Android</li>
+        </ul>
       </div> <!--#skills-->
 
       <div id="contact">
@@ -218,7 +252,7 @@
     </div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://use.fontawesome.com/a93fc3fb2e.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
