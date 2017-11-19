@@ -5,12 +5,21 @@
 //     $(this).addClass("active");
 // });
 
+$("body").attr({
+    "data-spy": "scroll",
+    "data-target": "#mainHeader"
+  }).scrollspy();
+
 $(function () {
     $(document).scroll(function () {
       var $nav = $("#mainHeader");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
+
+var navOffset = $('#mainHeader').css("height");
+navOffset = navOffset.slice(0, - 2)
+console.log(navOffset);
 
 // Add smooth scrolling on all links inside the navbar
 $("#mainHeader li:not(:first-child) a").on('click', function(event) {
@@ -27,11 +36,11 @@ $("#mainHeader li:not(:first-child) a").on('click', function(event) {
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $("html, body").animate({
-            scrollTop: $(hash).offset().top
+            scrollTop: $(hash).offset().top - navOffset
         }, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
+        history.pushState(null,null,hash);
         });
         
     } // End if
@@ -51,6 +60,8 @@ $("#mainHeader li:first-child a").on('click', function(event){
 
     document.body.scrollTop = 0; // For Chrome, Safari and Opera 
     document.documentElement.scrollTop = 0; // For IE and Firefox
+
+    history.pushState(null,null,"#home");
 
     });    
 })
