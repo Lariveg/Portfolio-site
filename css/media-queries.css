@@ -37,4 +37,9 @@
         float: right;
     }
 
+    #skills li {
+        width: 33.33%;
+        padding: 10px 0;
+    }
+
 }

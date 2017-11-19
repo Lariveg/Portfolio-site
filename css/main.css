@@ -112,9 +112,15 @@ body {
     line-height: 1.6em;
 }
 
-#skills span {
+#skills li span {
     font-size: 0.9em;
-    margin-right: 4px;
+    margin-right: 6px;
+}
+
+#skills li {
+    float: left;
+    width: 50%;
+    padding: 10px 0;
 }
 
 .projects-details h1{

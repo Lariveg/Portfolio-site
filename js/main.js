@@ -18,7 +18,7 @@ $(function () {
 });
 
 var navOffset = $('#mainHeader').css("height");
-navOffset = navOffset.slice(0, - 2)
+navOffset = navOffset.slice( 0, - 2)
 console.log(navOffset);
 
 // Add smooth scrolling on all links inside the navbar
