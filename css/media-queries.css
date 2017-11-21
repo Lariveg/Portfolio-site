@@ -28,14 +28,24 @@
         float: left;
     }
 
-    .projects-description {
+    .projects-details {
+        float:left;
+        width: 50%;
+        padding: 15px;
+    }
+
+    #projects > .projects-details:nth-child(2n+1) {
+        clear: both;
+     }
+
+    /* .projects-description {
         width: 60.625%;
         float: left;
     }
 
     .carouselWrapper {
         float: right;
-    }
+    } */
 
     #skills li {
         width: 33.33%;
