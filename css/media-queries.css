@@ -34,7 +34,7 @@
         padding: 15px;
     }
 
-    #projects > .projects-details:nth-child(2n+1) {
+    #projects .wrapper > .projects-details:nth-child(2n) {
         clear: both;
      }
 
