@@ -15,7 +15,7 @@ body {
 }
 
 .wrapper {
-    width: 90%;
+    width: 80%;
     max-width: 1000px;
     margin: 0 auto 0;
 }
@@ -145,4 +145,29 @@ body {
     margin: 20px auto 0;
 }
 
+.icon {
+    width: 40px;
+    height: 40px;
+    vertical-align: -9px;
+}
+
+#contact p, #contact h2 {
+    font-size: 2.2em;
+}
+
+#contact p, .icon {
+    display: inline-block;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+#contact h2, #contact{
+    margin-bottom: 20px;
+}
 
