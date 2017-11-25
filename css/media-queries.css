@@ -17,6 +17,7 @@
    
     #intro {
         margin-top: 80px;
+        padding-bottom: 30px;
     }
 
     #intro p, #about p, #projects p {
@@ -62,6 +63,15 @@
     #skills li {
         width: 33.33%;
         padding: 10px 0;
+    }
+
+    #about, #projects, #skills, #contact {
+        margin-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    #about>h1, #projects>h1, #skills>h1, #contact>h1 {
+        margin-bottom: 70px;
     }
 
 }
