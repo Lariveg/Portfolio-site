@@ -14,6 +14,25 @@
     #mainHeader li:last-child a:after {
         content: '';
     }
+
+    /* .profile-image {
+        transform: translateX(-150px);
+        animation: slide-right 0.8s ease;
+    }
+
+    @keyframes slide-right {
+        to { 
+            transform: translateX(0);
+        }
+    } */
+
+    .intro-title {
+        display: none;
+    }
+
+    .intro>p {
+        display: none;
+    }
    
     #intro {
         margin-top: 80px;

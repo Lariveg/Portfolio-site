@@ -68,6 +68,12 @@ body {
     border-radius: 50%;
     margin-bottom: 20px;
     border: 3px solid #D4CCCC;
+    transition: transform .5s;
+}
+
+.profile-image:hover {
+    max-width: 330px;
+    transform: scale(1.1);
 }
 
 .intro-title {
