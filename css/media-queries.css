@@ -15,6 +15,18 @@
         content: '';
     }
    
+    #intro {
+        margin-top: 80px;
+    }
+
+    #intro p, #about p, #projects p {
+        font-size: 2em;
+    }
+
+    #projects .projects-description p {
+        font-size: 1.8em;
+    }
+
     .intro {
         width: 60.625%;
         float: right;
