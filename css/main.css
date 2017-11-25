@@ -5,6 +5,7 @@ html {
 
 body {
     position: relative;
+    font-family: 'Lato', sans-serif;
   }
 
 #page-wrapper {
@@ -25,6 +26,7 @@ body {
     background-color: #fff!important;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: 'Lato', sans-serif;
 }
 
 #mainHeader>button {
@@ -72,9 +74,17 @@ body {
     margin-bottom: 25px;
 }
 
+.subtitle {
+    font-size: 3em;
+    color: rgba(73,76,78, .8);
+    margin-bottom: 9px;
+    font-family: 'Lato', sans-serif;
+}
+
 .title-font {
     font-size: 3.5em;
     margin-bottom: 9px;
+    font-family: 'Lato', sans-serif;
 }
 .title {
     background-color: #78909C;
